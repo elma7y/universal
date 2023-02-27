@@ -7,26 +7,23 @@ li {
   list-style: none;
   color: #021a93;
 }
-.box-item {
-  border: 2px solid;
-  padding: 90px 20px;
-}
-h1{
+
+h1 {
   color: #ff4f00;
   font-weight: 600;
 }
-small{
-  color: #263238 ;
-  font-size:16px;
+small {
+  color: #263238;
+  font-size: 16px;
   font-weight: 500;
-  
 }
-.box-item{
+.box-item {
   background-color: #ff510000;
+  height: 100%;
 }
-i{
-  color: #ff4f00;
-  background-color: #263238;
+i {
+  color: white;
+  background-color: #407bff;
   width: 60px;
   height: 60px;
   border-radius: 30px;
@@ -38,4 +35,12 @@ i{
   justify-content: center;
   align-items: center;
 }
+.web-iti {
+  width: 100px;
+}
 
+.col-md-3 {
+  border: #407bff 1px solid;
+  height: 350px;
+  max-height: 350px;
+}
