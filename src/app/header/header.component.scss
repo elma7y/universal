@@ -89,6 +89,13 @@ h6 {
   -o-border-radius: 15px;
   box-shadow: 1px 4px 0px 1px #ff4f00;
 }
+.btn-Our-services:hover{
+  background-color: #ff4f00;
+  color: white;
+  box-shadow: 1px 4px 0px 1px white;
+
+
+}
 
 small {
   color: #2a2a72;
@@ -101,7 +108,7 @@ small {
 .box-items:hover {
   background-color: #155eae;
   small,
-  h6 {
+  h4 ,p {
     color: white;
   }
 }
@@ -431,4 +438,7 @@ i {
   background-color: #ff4f00;
   box-shadow: 1px 3px 0px 1px #0912be;
 
+}
+h4{
+  color: #021a93;
 }
