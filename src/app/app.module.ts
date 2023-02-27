@@ -10,7 +10,9 @@ import { WebDeveComponent } from './web-deve/web-deve.component';
 import { UiuxComponent } from './uiux/uiux.component';
 import { SocialComponent } from './social/social.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-
+import {AccordionModule} from 'primeng/accordion';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ContactComponent } from './contact/contact.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,11 +23,14 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     WebDeveComponent,
     UiuxComponent,
     SocialComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    AccordionModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
