@@ -12,7 +12,6 @@ import { SocialComponent } from './social/social.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import {AccordionModule} from 'primeng/accordion';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ContactComponent } from './contact/contact.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +23,7 @@ import { ContactComponent } from './contact/contact.component';
     UiuxComponent,
     SocialComponent,
     PageNotFoundComponent,
-    ContactComponent
+  
   ],
   imports: [
     BrowserModule,
