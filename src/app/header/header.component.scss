@@ -1,5 +1,4 @@
 .btn-join-blu {
-  // background: linear-gradient(to left, #0088d9, #155eae 50%, #2a2a72 100%);
   background-color: #ff4f00;
   border: none;
   color: white;
@@ -19,7 +18,7 @@
 }
 p {
   font-weight: 500;
-  font-size: 20px;
+  font-size: 16px;
   color: #2a2a72;
 }
 
@@ -78,7 +77,7 @@ h6 {
 }
 .btn-Our-services {
   background-color: white;
-  color: #ff4f00;
+  color:#0071f2;
   border: none;
   height: 3.3em;
   width: 10.3em;
@@ -105,7 +104,7 @@ small {
   font-family: "Poppins", sans-serif;
 }
 
-.box-items:hover {
+.col-md-3:hover {
   background-color: #155eae;
   small,
   h5 ,p {
@@ -120,18 +119,13 @@ small {
   -o-transition: 0.3s;
   cursor: pointer;
   color: white;
-}
-.col-md-3:hover {
-  transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  -o-transform: scale(1.1);
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
 }
 
-.why-us {
-  background-color: #155eae;
-}
+
+
 .btn {
   border: none;
   height: 50px;
@@ -161,11 +155,11 @@ small {
 }
 .gold:hover {
   background-color: white;
-  color: #021a93;
+  color: #0071f2;
 }
 .white:hover {
   background-color: #ff4f00;
-  color: #021a93;
+  color: #0071f2;
 }
 .white {
   background-color: white;
@@ -188,20 +182,10 @@ small {
   width: 500px;
 }
 .header-home {
-  position: relative;
-  z-index: 1;
-  &::before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 115%;
-    right: 0;
-    background-image: url(../../assets/Images/frist.svg);
+    background-image: url(../../assets/Images/bgg.jpg);
     background-position: center;
     background-size: cover;
-    z-index: -1;
-    height: calc(100% - -10px);
-  }
+  
 }
 
 .div-boxx {
@@ -237,7 +221,7 @@ textarea {
   left: 0;
   padding: 10px;
   font-size: 1rem;
-  color: #ff4f00;
+  color: #0071f2;
   text-transform: capitalize;
   pointer-events: none;
   transition: 0.3s;
@@ -260,14 +244,14 @@ textarea {
 .input-bx input:valid,
 .input-bx input:focus {
   color: #0912be;
-  border: 2px solid #0a12b1;
+  border: 1px solid #0a12b1;
 }
 
 textarea:focus {
   color: #021a93;
 }
 label {
-  color: #ff4f00;
+  color: #0071f2;
 }
 .last-section {
   background-color: #daa62100;
@@ -294,12 +278,8 @@ label {
   color: #021a93;
   cursor: pointer;
 }
-svg {
-  position: absolute;
-}
-section.slider {
-  padding-top: 150px;
-}
+
+
 
 .contact-us-text {
   color: #021a93;
@@ -362,7 +342,7 @@ i {
   align-items: center;
 }
 .why-us {
-  background-image: url(../../assets/Images/two.svg);
+  background-image: url(../../assets/Images/bgg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -411,7 +391,7 @@ i {
   }
 }
 .btn-submit{
-  background-color:#0071f2;
+  background-color:#155eae;
   color: white;
   height: 3.3em;
   width: 10.3em;
@@ -439,6 +419,63 @@ i {
   box-shadow: 1px 3px 0px 1px #0912be;
 
 }
+.col{
+  cursor: pointer;
+}
 h5{
+ 
   color: #021a93;
+}
+.displayblock{
+  display: block;
+}
+@media only screen and (max-width: 1200px){
+}
+@media only screen and (max-width: 992px){
+  .displayblock{
+    display: none;
+  }
+  .aos-animate {
+
+    -o-transition-property: none !important;
+    -moz-transition-property: none !important;
+    -ms-transition-property: none !important;
+    -webkit-transition-property: none !important;
+    transition-property: none !important;
+    transition-duration: 0s;
+
+    -o-transform: none !important;
+    -moz-transform: none !important;
+    -ms-transform: none !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+
+    -webkit-animation: none !important;
+    -moz-animation: none !important;
+    -o-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important;
+  }
+  .aos-init{
+    -o-transition-property: none !important;
+    -moz-transition-property: none !important;
+    -ms-transition-property: none !important;
+    -webkit-transition-property: none !important;
+    transition-property: none !important;
+    transition-duration: 0s;
+
+    -o-transform: none !important;
+    -moz-transform: none !important;
+    -ms-transform: none !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+
+    -webkit-animation: none !important;
+    -moz-animation: none !important;
+    -o-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important;
+  }
+ 
+
 }

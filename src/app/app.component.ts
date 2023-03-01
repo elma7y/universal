@@ -10,8 +10,10 @@ export class AppComponent implements OnInit  {
   title = 'geekyAir';
   
   ngOnInit(): void {
-    AOS.init();
-
+    AOS.init(
+      
+    );
+     
 
   }
 }

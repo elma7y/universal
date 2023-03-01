@@ -35,8 +35,9 @@ i::before {
   transform: translate(-50%, -50%);
 }
 .footer {
-  background-image: url(../../assets/Images/two.svg);
-  background-repeat: no-repeat;
+  background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #010259, #007bd9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   background-size:cover;
   background-position: center;
   padding: 40px 0;
