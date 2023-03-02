@@ -29,7 +29,7 @@ export class ContactUsService {
       "sa5a6f2e95" : this.lastName,
       "s12d9c3e49" : this.email,
       "s53c77375b" : this.phone,
-      "6" : this.textArea
+      "sb6920fa44" : this.textArea
     }
     
     return this.http.post<any>(`https://app.smartsuite.com/api/v1/applications/6400948ad6c922626dfe8087/records/`,body,{headers})
