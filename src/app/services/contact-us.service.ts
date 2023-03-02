@@ -19,19 +19,19 @@ export class ContactUsService {
   }
   contact(){
     const  headers = new HttpHeaders({
-      'Authorization' :`Token ${this.ApiKey}`,
+      "Authorization" :`Token ${this.ApiKey}`,
       "ACCOUNT-ID" :"snt0n45k",
-      'Content-Type': 'application/json',
+      "Content-Type": "application/json",
+      'Access-Control-Allow-Origin': '*',
     }) 
     let body = {
-      "title": new Date().toISOString(),
+      "title": "title65kk6",
       "sfa86fa6fa" : this.firstName,
       "sa5a6f2e95" : this.lastName,
       "s12d9c3e49" : this.email,
       "s53c77375b" : this.phone,
       "sb6920fa44" : this.textArea
     }
-    
     return this.http.post<any>(`https://app.smartsuite.com/api/v1/applications/6400948ad6c922626dfe8087/records/`,body,{headers})
     }
 }
