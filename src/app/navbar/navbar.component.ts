@@ -1,4 +1,4 @@
-import { Component, OnInit , DoCheck } from '@angular/core';
+import { Component, OnInit , DoCheck, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -6,12 +6,18 @@ import { Router } from '@angular/router';
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss']
 })
-export class NavbarComponent implements OnInit,DoCheck  {
-
+export class NavbarComponent implements OnInit,DoCheck,AfterViewInit  {
+  @ViewChild('service')
+  MyProps!: ElementRef;
   constructor(private route :Router) { }
+  ngAfterViewInit(): void {
+  }
   ngDoCheck(): void {
   }
 
-  ngOnInit(): void {
+  ngOnInit(): void {    
+  }
+  scroll(el:any){
+    el.scrollIntoView({behavior:'smooth'})
   }
 }

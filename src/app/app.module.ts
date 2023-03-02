@@ -12,6 +12,12 @@ import { SocialComponent } from './social/social.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import {AccordionModule} from 'primeng/accordion';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BlogComponent } from './blog/blog.component';
+import { ServicesComponent } from './service/services.component';
+import { AboutComponent } from './about/about.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,14 +29,18 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     UiuxComponent,
     SocialComponent,
     PageNotFoundComponent,
-  
+    BlogComponent,
+    ServicesComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AccordionModule,
-    BrowserAnimationsModule
-  ],
+    BrowserAnimationsModule,
+    ReactiveFormsModule,
+    HttpClientModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
