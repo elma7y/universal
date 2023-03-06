@@ -23,6 +23,9 @@ export class ContactUsService {
       "ACCOUNT-ID" :"snt0n45k",
       "Content-Type": "application/json",
       'Access-Control-Allow-Origin': '*',
+      "Access-Control-Allow-Methods": "POST",
+      // 'Access-Control-Allow-Credentials': 'Content-Type',
+      'Access-Control-Allow-Headers': 'Content-Type'
     }) 
     let body = {
       "title": "title65kk6",
@@ -32,6 +35,7 @@ export class ContactUsService {
       "s53c77375b" : this.phone,
       "sb6920fa44" : this.textArea
     }
-    return this.http.post<any>(`https://app.smartsuite.com/api/v1/applications/6400948ad6c922626dfe8087/records/`,body,{headers})
+    console.log(body)
+        return this.http.post<any>(`https://app.smartsuite.com/api/v1/applications/6400948ad6c922626dfe8087/records/`,body,{headers})
     }
 }
