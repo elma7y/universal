@@ -53,14 +53,16 @@
     </div>
   </div>
 </section>
-<section  class="header-home2 py-5" id="Service">
+<section class="header-home2 py-5" id="Service">
   <div class="container text-center py-2">
     <button class="btn-services">SERVICES</button>
   </div>
   <h1 class="title-blue text-center py-2">Make Your Digital Presence</h1>
   <h5 class="text-center">Stand Out With Our Comprehensive Services</h5>
   <div class="container py-5">
-    <div class="row py-3 justify-content-center flex-column flex-md-row gap-3 flex-column flex-md-row flex-lg-row">
+    <div
+      class="row py-3 justify-content-center flex-column flex-md-row gap-3 flex-column flex-md-row flex-lg-row"
+    >
       <div
         data-aos="fade-up-right"
         data-aos-duration="1000"
@@ -70,10 +72,14 @@
         <div class="box-items rounded py-5">
           <div class="mx-3">
             <div class="text-center">
-              <img src="../../assets/Images/Wb Imgs-02.png" alt="noCode" class="" />
+              <img
+                src="../../assets/Images/Wb Imgs-02.png"
+                alt="noCode"
+                class=""
+              />
             </div>
             <h5 class="text-center">LOW CODE / NO CODE</h5>
-                  <P>We Plan, Manage and empower you work with No-Code Automations</P>
+            <P>We Plan, Manage and empower you work with No-Code Automations</P>
           </div>
         </div>
       </div>
@@ -90,7 +96,8 @@
             </div>
             <h5 class="text-center">WEB DEVELOPMENT</h5>
             <p>
-              We create responsive websites that enrich your brand and deliver a great user experience
+              We create responsive websites that enrich your brand and deliver a
+              great user experience
             </p>
           </div>
         </div>
@@ -226,55 +233,43 @@
       <div class="col-md-5">
         <form (ngSubmit)="submitcontactform()" [formGroup]="contact">
           <div class="input-bx py-2">
-            <input type="text" formControlName="firstName" />
+            <input type="text" required="required" formControlName="firstName" />
+            <span>First Name</span>
             <div
               *ngIf="
-                contact.get('firstName')?.errors &&
-                contact.get('firstName')?.touched
+                contact.get('firstName')?.errors && contact.get('firstName')?.touched
               "
               class="alert alert-danger p-2"
             >
-              <p
-                class="m-0"
-                *ngIf="contact.get('firstName')?.getError('required')"
-              >
+              <p class="m-0" *ngIf="contact.get('firstName')?.getError('required')">
                 firstName is required
               </p>
-              <p *ngIf="contact.get('firstName')?.getError('minlength')">
-                firstName is minlength is 3
-              </p>
-              <p *ngIf="contact.get('firstName')?.getError('maxlength')">
-                firstName is maxlength is 8
+              <p *ngIf="contact.get('firstName')?.getError('firstName')">
+                firstName is invalid
               </p>
             </div>
-            <span>First Name</span>
           </div>
           <div class="input-bx py-2">
-            <input type="text" formControlName="lastName" />
+            <input type="text" required="required" formControlName="lastName" />
+            <span>last Name</span>
             <div
               *ngIf="
-                contact.get('lastName')?.errors &&
-                contact.get('lastName')?.touched
+                contact.get('lastName')?.errors && contact.get('lastName')?.touched
               "
               class="alert alert-danger p-2"
             >
-              <p
-                class="m-0"
-                *ngIf="contact.get('lastName')?.getError('required')"
-              >
-                firstName is required
+              <p class="m-0" *ngIf="contact.get('lastName')?.getError('required')">
+                lastName is required
               </p>
-              <p *ngIf="contact.get('lastName')?.getError('minlength')">
-                lastName is minlength is 3
-              </p>
-              <p *ngIf="contact.get('lastName')?.getError('maxlength')">
-                lastName is maxlength is 8
+              <p *ngIf="contact.get('lastName')?.getError('lastName')">
+                lastName is invalid
               </p>
             </div>
-            <span>Last Name</span>
           </div>
           <div class="input-bx py-2">
             <input type="email" required="required" formControlName="email" />
+            <span>Email</span>
+
             <div
               *ngIf="
                 contact.get('email')?.errors && contact.get('email')?.touched
@@ -288,7 +283,6 @@
                 email is invalid
               </p>
             </div>
-            <span>Email</span>
           </div>
           <div class="input-bx py-2">
             <input type="text" required="required" formControlName="phone" />
