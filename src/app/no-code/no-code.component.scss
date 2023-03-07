@@ -11,13 +11,62 @@ h1{
 h4,h5 ,h6 ,p{
     color: #224ada;
 }
+@media only screen and (max-width: 992px) {
+    .displayblock {
+      display: none;
+    }
+    h1{
+        font-size: 22px;
+    }
+    .Zapier{
+        font-size: 20px;
+    }
+    .btn-Our-services {
+      height: 2.5em;
+      width: 8.3em;
+    }
+    .low-code , .Why-SmartSuite{
+        text-align: center;
+    }
+    .aos-animate {
+      -o-transition-property: none !important;
+      -moz-transition-property: none !important;
+      -ms-transition-property: none !important;
+      -webkit-transition-property: none !important;
+      transition-property: none !important;
+  
+      -o-transform: none !important;
+      -moz-transform: none !important;
+      -ms-transform: none !important;
+      -webkit-transform: none !important;
+      transform: none !important;
+  
+      -webkit-animation: none !important;
+      -moz-animation: none !important;
+      -o-animation: none !important;
+      -ms-animation: none !important;
+      animation: none !important;
+    }
+    .aos-init {
+      -o-transition-property: none !important;
+      -moz-transition-property: none !important;
+      -ms-transition-property: none !important;
+      -webkit-transition-property: none !important;
+      transition-property: none !important;
+  
+      -o-transform: none !important;
+      -moz-transform: none !important;
+      -ms-transform: none !important;
+      -webkit-transform: none !important;
+      transform: none !important;
+  
+      -webkit-animation: none !important;
+      -moz-animation: none !important;
+      -o-animation: none !important;
+      -ms-animation: none !important;
+      animation: none !important;
+    }
+  }
+  
 
-// @media screen 993  {
-    
-// }
-// @media screen 768  {
-    
-// }
-// @media screen 1070  {
-    
-// }
+ 

@@ -13,7 +13,10 @@
           GeekyAir is a <span>full-service software</span> company helping
           businesses succeed online.
         </p>
-        <button class="btn-Our-services mx-2">Join US</button>
+        <a href="#Service">
+          <button class="btn-Our-services mx-2" >OUR SERVICES</button>
+        </a>
+      
       </div>
 
       <div
@@ -32,10 +35,8 @@
 </section>
 <section class="py-5">
   <h1 class="text-center title-blue py-4">Proudly Certified By:</h1>
-  <div
-    class="d-flex justify-content-center align-items-center flex-column flex-md-row gap-3 flex-column flex-md-row flex-lg-row"
-  >
-    <div>
+  <div class="d-flex justify-content-center align-items-center flex-column flex-md-row gap-3 flex-column flex-md-row flex-lg-row">
+    <div  data-aos="fade-right"  data-aos-duration="1000">
       <a
         href="https://www.smartsuite.com/hire-an-expert/geekyair"
         target="_blank"
@@ -43,7 +44,7 @@
         <img src="../../assets/Images/smart-suite.svg" alt=""
       /></a>
     </div>
-    <div>
+    <div data-aos="fade-left" data-aos-duration="1000">
       <a
         href="https://zapier.com/experts/geekyair
             "
@@ -55,10 +56,10 @@
 </section>
 <section class="header-home2 py-5" id="Service">
   <div class="container text-center py-2">
-    <button class="btn-services">SERVICES</button>
+    <button class="btn-services py-3">SERVICES</button>
   </div>
   <h1 class="title-blue text-center py-2">Make Your Digital Presence</h1>
-  <h5 class="text-center">Stand Out With Our Comprehensive Services</h5>
+  <h5 class="text-center title-Stand ">Stand Out With Our Comprehensive Services</h5>
   <div class="container py-5">
     <div
       class="row py-3 justify-content-center flex-column flex-md-row gap-3 flex-column flex-md-row flex-lg-row"
@@ -162,8 +163,8 @@
             </p>
           </div>
           <div class="">
-            <button class="btn gold m-1">LEARN MORE</button>
-            <button class="btn white mx-3 py-1 m-1">Our SERVICES</button>
+            <button class="btn gold"  routerLink="about">LEARN MORE</button>
+          
           </div>
         </div>
       </div>
@@ -180,7 +181,7 @@
         data-aos-duration="2000"
       >
         <div
-          class="image-box position-relative overflow-hidden border border-warning w-100 text-center px-0"
+          class="image-box position-relative overflow-hidden  w-100 text-center px-0"
         >
           <img
             src="../../assets/Images/rounded_corners-removebg-preview.png"
@@ -225,109 +226,7 @@
     </div>
   </div>
 </section>
-<section class="contact-us py-5 bg-light" id="Contact">
+<section class="contact-us py-5" id="Contact">
   <h1 class="text-center contact-us-text">Contact us</h1>
   <p class="text-center">Got A Project or A Partnership In Mind ?</p>
-  <!-- <div class="container">
-    <div class="row justify-content-evenly align-items-center gap-5">
-      <div class="col-md-5">
-        <form (ngSubmit)="submitcontactform()" [formGroup]="contact">
-          <div class="input-bx py-2">
-            <input type="text" required="required" formControlName="firstName" />
-            <span>First Name</span>
-            <div
-              *ngIf="
-                contact.get('firstName')?.errors && contact.get('firstName')?.touched
-              "
-              class="alert alert-danger p-2"
-            >
-              <p class="m-0" *ngIf="contact.get('firstName')?.getError('required')">
-                firstName is required
-              </p>
-              <p *ngIf="contact.get('firstName')?.getError('firstName')">
-                firstName is invalid
-              </p>
-            </div>
-          </div>
-          <div class="input-bx py-2">
-            <input type="text" required="required" formControlName="lastName" />
-            <span>last Name</span>
-            <div
-              *ngIf="
-                contact.get('lastName')?.errors && contact.get('lastName')?.touched
-              "
-              class="alert alert-danger p-2"
-            >
-              <p class="m-0" *ngIf="contact.get('lastName')?.getError('required')">
-                lastName is required
-              </p>
-              <p *ngIf="contact.get('lastName')?.getError('lastName')">
-                lastName is invalid
-              </p>
-            </div>
-          </div>
-          <div class="input-bx py-2">
-            <input type="email" required="required" formControlName="email" />
-            <span>Email</span>
-
-            <div
-              *ngIf="
-                contact.get('email')?.errors && contact.get('email')?.touched
-              "
-              class="alert alert-danger p-2"
-            >
-              <p class="m-0" *ngIf="contact.get('email')?.getError('required')">
-                email is required
-              </p>
-              <p *ngIf="contact.get('email')?.getError('email')">
-                email is invalid
-              </p>
-            </div>
-          </div>
-          <div class="input-bx py-2">
-            <input type="text" required="required" formControlName="phone" />
-            <div
-              *ngIf="
-                contact.get('phone')?.errors && contact.get('phone')?.touched
-              "
-              class="alert alert-danger p-2"
-            >
-              <p class="m-0" *ngIf="contact.get('phone')?.getError('required')">
-                Phone Number is required
-              </p>
-              <p *ngIf="contact.get('phone')?.getError('phone')">
-                Phone Number is invalid
-              </p>
-            </div>
-            <span>Phone Number</span>
-          </div>
-          <div class="input-bx py-2">
-            <div class="form-floating">
-              <textarea
-                formControlName="textArea"
-                class="form-control"
-                placeholder="Leave a comment here"
-                id="floatingTextarea2"
-                style="height: 100px"
-              ></textarea>
-              <label for="floatingTextarea2">Tell Us About Your Project</label>
-            </div>
-          </div>
-          <div>
-            <button
-              [disabled]="contact.invalid"
-              class="btn-submit btn"
-              type="submit"
-            >
-              Submit
-            </button>
-          </div>
-        </form>
-      </div>
-      <div class="col-md-6">
-        <img src="../../assets/Images/Contact-us.png" alt="" class="w-100" />
-      </div>
-    </div>
-  </div> -->
-  <iframe src="https://form.smartsuite.com/snt0n45k/WSu3ie53l8?header=false" width="100%" height="500px"></iframe>
-</section>
+  <iframe src="https://form.smartsuite.com/snt0n45k/WSu3ie53l8?header=false" width="100%" height="800px"></iframe></section>

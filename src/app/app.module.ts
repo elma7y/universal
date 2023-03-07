@@ -16,6 +16,7 @@ import { BlogComponent } from './blog/blog.component';
 import { AboutComponent } from './about/about.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { JoinUsComponent } from './join-us/join-us.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { HttpClientModule } from '@angular/common/http';
     PageNotFoundComponent,
     BlogComponent,
     AboutComponent,
+    JoinUsComponent,
     
   ],
   imports: [

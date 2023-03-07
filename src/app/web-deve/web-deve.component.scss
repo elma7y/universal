@@ -20,6 +20,7 @@ small {
 .box-item {
   background-color: #ff510000;
   height: 100%;
+  border: 1px solid   #407bff;
 }
 i {
   color: white;
@@ -40,7 +41,7 @@ i {
 }
 
 .col-md-3 {
-  border: #407bff 1px solid;
+  // border: #407bff 1px solid;
   height: 350px;
   max-height: 350px;
 }

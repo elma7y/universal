@@ -1,6 +1,6 @@
 <section class="Navbar">
   <div class="container">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"
           ><img
@@ -9,6 +9,7 @@
             class="w-100"
         /></a>
         <button
+          id="close"
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
@@ -29,7 +30,8 @@
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-white mx-5">
               <li class="nav-item">
                 <a
-                  class="nav-link active text-white"
+                  (click)="closeToggle()"
+                  class="nav-link active text-white line"
                   id=""
                   aria-current="page"
                   routerLink="/"
@@ -38,33 +40,40 @@
               </li>
               <li class="nav-item">
                 <a
-                
-                  class="nav-link active text-white rania"
+                (click)="closeToggle()"
+                  class="nav-link active text-white line"
                   aria-current="page"
                   href="#Service"
+                  routerLinkActive="line"
                   >Services</a
                 >
               </li>
               <li class="nav-item">
                 <a
+                (click)="closeToggle()"
                   id="rania"
-                  class="nav-link active text-white rania"
+                  class="nav-link active text-white line"
                   aria-current="page"
                   routerLink="about"
+                  routerLinkActive="line"
                   >About Us</a
                 >
               </li>
-             
+
               <li class="nav-item">
-                <a
-                  class="nav-link active text-white rania"
-                  href="#Contact"
+                <a (click)="closeToggle()"
+                class="nav-link active text-white line" href="#Contact"
                   >Contact Us</a
                 >
               </li>
               <li>
                 <div>
-                  <button class="btn-join ms-lg-5 ms-md-0 ms-0">Join Us</button>
+                  <button
+                    class="btn-join ms-lg-5 ms-md-0 ms-0"
+                    routerLink="join-us"
+                  >
+                    Join Us
+                  </button>
                 </div>
               </li>
             </ul>

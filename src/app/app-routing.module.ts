@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { HeaderComponent } from './header/header.component';
+import { JoinUsComponent } from './join-us/join-us.component';
 import { NoCodeComponent } from './no-code/no-code.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { SocialComponent } from './social/social.component';
@@ -16,6 +17,8 @@ const routes: Routes = [
   { path: 'uiUx',component:UiuxComponent },
   {path:'social',component:SocialComponent},
   {path:'about',component:AboutComponent},
+  {path:'join-us',component:JoinUsComponent},
+
   { path: '**', component:PageNotFoundComponent},
 
 

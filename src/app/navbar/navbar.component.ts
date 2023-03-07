@@ -20,4 +20,8 @@ export class NavbarComponent implements OnInit,DoCheck,AfterViewInit  {
   scroll(el:any){
     el.scrollIntoView({behavior:'smooth'})
   }
+  closeToggle(){
+    let toggle = document.getElementById("close")
+    toggle?.click()
+  }
 }
