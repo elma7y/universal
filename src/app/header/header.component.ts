@@ -1,12 +1,16 @@
 import { Component, OnInit  } from '@angular/core';
 import { FormControl,FormGroup, Validators } from '@angular/forms';
 import { ContactUsService } from '../services/contact-us.service';
+// @ts-ignore
+import Typewriter from 'typewriter-effect/dist/core';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
+
+
 export class HeaderComponent implements OnInit {
    contact:FormGroup = new FormGroup({
      firstName:new FormControl( '' , [Validators.required ,Validators.minLength(3)]),
@@ -17,9 +21,17 @@ export class HeaderComponent implements OnInit {
 
 
    })
+   
   constructor(private contactus:ContactUsService) { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    new Typewriter('#typewriter', {
+      strings: ['Hello', 'World'],
+      autoStart: true,
+    });
+  }
+
+   
 
   submitcontactform(){
     this.contactus.firstName = this.contact.controls['firstName'].value
@@ -31,4 +43,8 @@ export class HeaderComponent implements OnInit {
       console.log(res)
     })
   }
+
+
+
+
 }

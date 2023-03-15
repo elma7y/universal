@@ -24,6 +24,7 @@ p {
 
 .box-items{
   border: #0071f2 1px solid;
+  cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
   rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
@@ -61,6 +62,7 @@ h1 {
   -moz-transition: 0.3s;
   -ms-transition: 0.3s;
   -o-transition: 0.3s;
+  cursor: none;
   &:hover {
     box-shadow: -2px -3px 0px 1px #021a93;
   }
@@ -190,6 +192,7 @@ small {
   transition: 0.3s;
   position: relative;
   z-index: 10;
+  cursor: pointer;
 }
 .bg-card {
   background-color: #ff4f00;
@@ -253,16 +256,16 @@ small {
   background-color: #f7b1002a;
   width: 357px;
   height: 296px;
-  border-radius: 50%;
+  border-radius: 55%;
   transition: 0.5s ease;
   -webkit-transition: 0.5s ease;
   -moz-transition: 0.5s ease;
   -ms-transition: 0.5s ease;
   -o-transition: 0.5s ease;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+  -webkit-border-radius: 55%;
+  -moz-border-radius: 55%;
+  -ms-border-radius: 55%;
+  -o-border-radius: 55%;
 }
 
 a {
@@ -285,48 +288,99 @@ i {
   background-size: cover;
   background-position: center;
 }
-.header-home h1::before {
-  content: " ";
-  animation: rania 1s;
-  -webkit-animation: rania 1.5s linear alternate infinite;
+
+.cycle-wrapper{
+	// width: 80%;
+	position: relative;
+	// margin: 110px auto 0 auto;
+	// font-family: 'Bree Serif';
+	// padding: 10px;
 }
-@keyframes rania {
-  0% {
-    content: " ";
-  }
-  5% {
-    content: " W |";
-  }
-  10% {
-    content: " WE |";
-  }
-  20% {
-    content: " WEL";
-  }
-  30% {
-    content: " WELC|";
-  }
-  40% {
-    content: " WELCO|";
-  }
-  50% {
-    content: " WELCOM |";
-  }
-  60% {
-    content: " WELCOME |";
-  }
-  70% {
-    content: " WELCOME T |";
-  }
-  80% {
-    content: " WELCOME TO |";
-  }
-  90% {
-    content: " WELCOME TO |";
-  }
-  100% {
-    content: "WELCOME TO  |";
-  }
+.rw-sentence{
+	margin: 0;
+	text-align: left;
+}
+.rw-sentence span{
+	font-size: 20px;
+	font-weight: normal;
+  white-space: nowrap;
+}
+.weoffer{
+  padding-top: 12px !important;
+}
+.rw-words{
+	display: inline;
+	text-indent: 10px;
+}
+.rw-words-1 span{
+	position: absolute;
+	opacity: 0;
+	overflow: hidden;
+  color: #ff4f00;
+  font-weight: 600;
+	-webkit-animation: rotateWord 18s linear infinite 0s;
+	-ms-animation: rotateWord 18s linear infinite 0s;
+	animation: rotateWord 18s linear infinite 0s;
+}
+.rw-words-1 span:nth-child(2) { 
+    -webkit-animation-delay: 3s; 
+	-ms-animation-delay: 3s; 
+	animation-delay: 3s; 
+  color: #ff4f00;
+}
+.rw-words-1 span:nth-child(3) { 
+    -webkit-animation-delay: 6s; 
+	-ms-animation-delay: 6s; 
+	animation-delay: 6s; 
+  color: #ff4f00;
+}
+.rw-words-1 span:nth-child(4) { 
+    -webkit-animation-delay: 9s; 
+	-ms-animation-delay: 9s; 
+	animation-delay: 9s; 
+  color: #ff4f00;
+}
+.rw-words-1 span:nth-child(5) { 
+    -webkit-animation-delay: 12s; 
+	-ms-animation-delay: 12s; 
+	animation-delay: 12s; 
+  color: #ff4f00;
+}
+.rw-words-1 span:nth-child(6) { 
+    -webkit-animation-delay: 15s; 
+	-ms-animation-delay: 15s; 
+	animation-delay: 15s; 
+  color: #ff4f00;
+}
+@-webkit-keyframes rotateWord {
+    0% { opacity: 0; }
+    2% { opacity: 0; -webkit-transform: translateY(-30px); }
+	5% { opacity: 1; -webkit-transform: translateY(0px);}
+    17% { opacity: 1; -webkit-transform: translateY(0px); }
+	20% { opacity: 0; -webkit-transform: translateY(30px); }
+	80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+@-ms-keyframes rotateWord {
+    0% { opacity: 0; }
+    2% { opacity: 0; -ms-transform: translateY(-30px); }
+	5% { opacity: 1; -ms-transform: translateY(0px);}
+    17% { opacity: 1; -ms-transform: translateY(0px); }
+	20% { opacity: 0; -ms-transform: translateY(30px); }
+	80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+@keyframes rotateWord {
+    0% { opacity: 0; }
+    2% { opacity: 0; -webkit-transform: translateY(-30px); transform: translateY(-30px); }
+	5% { opacity: 1; -webkit-transform: translateY(0px); transform: translateY(0px);}
+    17% { opacity: 1; -webkit-transform: translateY(0px); transform: translateY(0px); }
+	20% { opacity: 0; -webkit-transform: translateY(30px); transform: translateY(30px); }
+	80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+.openphone{
+  width: 200px;
 }
 .btn-submit {
   background-color: #155eae;
@@ -396,6 +450,9 @@ h5 {
   }
   .title-blue{
     font-size: 22px;
+  }
+  body{
+    text-align: center;
   }
   .title-Stand{
     font-size: 20px;

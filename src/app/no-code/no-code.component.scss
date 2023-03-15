@@ -1,6 +1,6 @@
 .Zapier{
-    font-size: 2.5rem;
-    color: #224ada;
+    font-size: 2rem;
+    color: black;
 
 }
 h1{
@@ -9,7 +9,8 @@ h1{
 
 }
 h4,h5 ,h6 ,p{
-    color: #224ada;
+   color: black;
+    ;
 }
 @media only screen and (max-width: 992px) {
     .displayblock {
@@ -66,6 +67,7 @@ h4,h5 ,h6 ,p{
       -ms-animation: none !important;
       animation: none !important;
     }
+    
   }
   
 
