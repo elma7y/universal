@@ -250,11 +250,11 @@ small {
 .overlay {
   position: absolute;
   bottom: -100%;
-  left: 0;
+  left: 30px;
   right: 0;
   opacity: 0;
   background-color: #f7b1002a;
-  width: 357px;
+  width: 296px;
   height: 296px;
   border-radius: 55%;
   transition: 0.5s ease;
@@ -301,8 +301,7 @@ i {
 	text-align: left;
 }
 .rw-sentence span{
-	font-size: 20px;
-	font-weight: normal;
+	font-size: 20.8px;
   white-space: nowrap;
 }
 .weoffer{
@@ -317,7 +316,7 @@ i {
 	opacity: 0;
 	overflow: hidden;
   color: #ff4f00;
-  font-weight: 600;
+  // font-weight: 600;
 	-webkit-animation: rotateWord 18s linear infinite 0s;
 	-ms-animation: rotateWord 18s linear infinite 0s;
 	animation: rotateWord 18s linear infinite 0s;
@@ -439,10 +438,27 @@ h5 {
     -ms-animation: none !important;
     animation: none !important;
   }
+  .bg-blog:hover .overlay{
+    display: none !important;
+  }
 }
 @media only screen and (max-width: 992px) {
   .displayblock {
     display: none;
+  }
+  .div-item-box{
+    padding: 10px ;
+    border: 1px solid white;
+    font-size: 14px;
+  }
+  .bg-blog:hover .overlay{
+    display: none !important;
+  }
+  .rw-sentence span{
+    font-size: 16px;
+  }
+  .Testimonials{
+  align-items: center;
   }
   .btn-Our-services {
     height: 2.5em;
@@ -457,6 +473,9 @@ h5 {
   .title-Stand{
     font-size: 20px;
 
+  }
+  .bg-blog:hover .overlay{
+    display: none !important;
   }
   .aos-animate {
     -o-transition-property: none !important;
@@ -477,6 +496,9 @@ h5 {
     -ms-animation: none !important;
     animation: none !important;
   }
+ 
+  
+  
   .aos-init {
     -o-transition-property: none !important;
     -moz-transition-property: none !important;
@@ -496,4 +518,66 @@ h5 {
     -ms-animation: none !important;
     animation: none !important;
   }
+
+
+
 }
+
+.star{
+  color: #fab005 !important;
+
+}
+.whatabout{
+  color: #155eae;
+}
+.div-item-box{
+    padding: 20px ;
+    border: 1px solid white;
+    border-radius:12px  ;
+    -webkit-border-radius:12px  ;
+    -moz-border-radius:12px  ;
+    -ms-border-radius:12px  ;
+    -o-border-radius:12px  ;
+}
+.carousel{
+  position: relative;
+}
+.carousel-control-prev{
+  position: absolute; 
+  left: 104px ;
+  color: red;
+  top: -54px;
+}
+.carousel-control-next{
+  position: absolute;
+  right: 9px;
+  color: red;
+  top: -54px;
+
+}
+.carousel-control-prev{
+  background-color: none !important;
+}
+.carousel-control-prev{
+  background-color: transparent !important;
+
+}
+span .carousel-control-next-icon {
+  color: red;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  height: 40px;
+  width: 40px;
+  outline: black;
+  background-color: rgba(0, 0, 0, 0.3);
+  // background-size: 100%, 100%;
+  border: 1px solid rgb(207, 142, 56);
+  border-radius:20px;
+  -webkit-border-radius:20px;
+  -moz-border-radius:20px;
+  -ms-border-radius:20px;
+  -o-border-radius:20px;
+}
+
+
+

@@ -1,0 +1,32 @@
+.fixed-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    color: #fff;
+    font-size: 16px;
+    padding: 12px 20px;
+    border-radius: 5px;
+    color: white;
+    background-color:#ff4f00;
+    border: 1px solid white;
+    box-shadow: 1px 3px 0px 1px white;
+  }
+  .fixed-button:hover {
+    background-color:#fffaf7;
+    color: #ff4f00;
+    border: 1px solid #ff4f00;
+  }
+  .scroll-top-button {
+    position: fixed;
+    bottom: 20px;
+    background-color:white;
+    color: #ff4f00;
+    right: 163px;
+    border: 1px solid #ff4f00;
+    height: 50px ;
+    width: 40px;
+    border-radius: 5px;
+
+  }
+ 

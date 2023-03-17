@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit ,DoCheck } from '@angular/core';
 import * as AOS from 'aos';
+import { window } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -8,13 +9,19 @@ import * as AOS from 'aos';
 })
 export class AppComponent implements OnInit  {
   title = 'geekyAir';
-  
+   
   ngOnInit(): void {
     AOS.init(
-      
     );
-     
-
+ 
   }
+  scrollToTop() {
+    let x = document.getElementById("mynav")
+    x?.scrollIntoView({behavior : "smooth"})
+  }
+ 
+  
+    
+  
 }
 

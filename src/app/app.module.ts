@@ -17,6 +17,7 @@ import { AboutComponent } from './about/about.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { JoinUsComponent } from './join-us/join-us.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { JoinUsComponent } from './join-us/join-us.component';
     BlogComponent,
     AboutComponent,
     JoinUsComponent,
+    ContactComponent,
     
   ],
   imports: [
