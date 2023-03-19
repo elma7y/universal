@@ -26,6 +26,7 @@
     "primeicons": "^6.0.1",
     "primeng": "^15.2.0",
     "rxjs": "~7.5.0",
+    "source-map-support": "^0.5.21",
     "t-writer.js": "^1.0.4",
     "tslib": "^2.3.0",
     "typewriter-effect": "^2.19.0",
