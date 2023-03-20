@@ -29,6 +29,31 @@
     border-radius: 5px;
 
   }
+  @media only screen and (max-width: 992px) {
+    
+    .fixed-button {
+      height: 50px;
+      width: 70px;
+      font-size: 10px;
+      // white-space: nowrap;
+      align-items: center;
+      justify-items: center;
+      right: 16px;
+    }
+    .scroll-top-button {
+      position: fixed;
+      bottom: 20px;
+      background-color:white;
+      color: #ff4f00;
+      right: 100px;
+      border: 1px solid #ff4f00;
+      height: 50px ;
+      width: 40px;
+      border-radius: 5px;
+  
+    }
+  
+  }
  
 
 
