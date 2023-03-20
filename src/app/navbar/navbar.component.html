@@ -33,6 +33,7 @@
                   (click)="closeToggle()"
                   class="nav-link active text-white line"
                   id=""
+                  aria-label="home"
                   aria-current="page"
                   routerLink="/"
                   >Home</a
@@ -44,6 +45,7 @@
                   class="nav-link active text-white line"
                   aria-current="page"
                   href="#Service"
+                  aria-label="services"
                   routerLinkActive="line"
                   >Services</a
                 >
@@ -56,13 +58,14 @@
                   aria-current="page"
                   routerLink="about"
                   routerLinkActive="line"
+                  aria-label="about"
                   >About Us</a
                 >
               </li>
 
               <li class="nav-item">
                 <a (click)="closeToggle()"
-                class="nav-link active text-white line" routerLink="join-us"
+                class="nav-link active text-white line" routerLink="join-us" aria-label="join-us"
                   >Join Us</a
                 >
               </li>
@@ -71,8 +74,9 @@
                   <button
                   class="btn-join ms-lg-5 ms-md-0 ms-0"
                   routerLink="cotact"
+                  aria-label="contact"
                 >
-                 Contact Us 
+                 Contact Us
                 </button>
                 </div>
               </li>
