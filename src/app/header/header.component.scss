@@ -324,34 +324,34 @@ i {
 	-ms-animation: rotateWord 18s linear infinite 0s;
 	animation: rotateWord 18s linear infinite 0s;
 }
-.rw-words-1 span:nth-child(2) { 
-    -webkit-animation-delay: 3s; 
-	-ms-animation-delay: 3s; 
-	animation-delay: 3s; 
+.rw-words-1 span:nth-child(2) {
+    -webkit-animation-delay: 3s;
+	-ms-animation-delay: 3s;
+	animation-delay: 3s;
   color: #ff4f00;
 }
-.rw-words-1 span:nth-child(3) { 
-    -webkit-animation-delay: 6s; 
-	-ms-animation-delay: 6s; 
-	animation-delay: 6s; 
+.rw-words-1 span:nth-child(3) {
+    -webkit-animation-delay: 6s;
+	-ms-animation-delay: 6s;
+	animation-delay: 6s;
   color: #ff4f00;
 }
-.rw-words-1 span:nth-child(4) { 
-    -webkit-animation-delay: 9s; 
-	-ms-animation-delay: 9s; 
-	animation-delay: 9s; 
+.rw-words-1 span:nth-child(4) {
+    -webkit-animation-delay: 9s;
+	-ms-animation-delay: 9s;
+	animation-delay: 9s;
   color: #ff4f00;
 }
-.rw-words-1 span:nth-child(5) { 
-    -webkit-animation-delay: 12s; 
-	-ms-animation-delay: 12s; 
-	animation-delay: 12s; 
+.rw-words-1 span:nth-child(5) {
+    -webkit-animation-delay: 12s;
+	-ms-animation-delay: 12s;
+	animation-delay: 12s;
   color: #ff4f00;
 }
-.rw-words-1 span:nth-child(6) { 
-    -webkit-animation-delay: 15s; 
-	-ms-animation-delay: 15s; 
-	animation-delay: 15s; 
+.rw-words-1 span:nth-child(6) {
+    -webkit-animation-delay: 15s;
+	-ms-animation-delay: 15s;
+	animation-delay: 15s;
   color: #ff4f00;
 }
 @-webkit-keyframes rotateWord {
@@ -465,8 +465,8 @@ h5 {
     font-size: 12px;
   }
   .carousel-control-prev{
-    position: absolute; 
-    left: 104px ;
+    position: absolute;
+    left: 25px; ;
     color: red;
     top: 220px !important;
   }
@@ -475,9 +475,9 @@ h5 {
     right: 9px;
     color: red;
     top:  220px !important;
-  
+
   }
-  
+
   .div-item-box{
     padding: 10px ;
     border: 1px solid white;
@@ -534,9 +534,9 @@ h5 {
     -ms-animation: none !important;
     animation: none !important;
   }
- 
-  
-  
+
+
+
   .aos-init {
     -o-transition-property: none !important;
     -moz-transition-property: none !important;
@@ -581,8 +581,8 @@ h5 {
   position: relative;
 }
 .carousel-control-prev{
-  position: absolute; 
-  left: 104px ;
+  position: absolute;
+  left: 25px ;
   color: red;
   top: -54px;
 }
