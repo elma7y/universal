@@ -35,10 +35,10 @@ import { ScrollTopModule } from 'primeng/scrolltop';
     AboutComponent,
     JoinUsComponent,
     ContactComponent,
-    
+
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     AccordionModule,
     BrowserAnimationsModule,

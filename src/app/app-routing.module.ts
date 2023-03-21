@@ -11,13 +11,12 @@ import { UiuxComponent } from './uiux/uiux.component';
 import { WebDeveComponent } from './web-deve/web-deve.component';
 
 const routes: Routes = [
-  // { path: '',   redirectTo: 'header', pathMatch: 'full' }, 
-  { path: '',  component:HeaderComponent },
+  { path: '',  component:HeaderComponent, },
   { path: 'noCode', component:NoCodeComponent },
   { path: 'web-development',component:WebDeveComponent },
   { path: 'uiUx',component:UiuxComponent },
   {path:'social',component:SocialComponent},
-  {path:'about',component:AboutComponent},
+  {path:'about',component:AboutComponent,},
   {path:'join-us',component:JoinUsComponent},
   {path:'cotact',component:ContactComponent},
 
@@ -30,7 +29,7 @@ const routes: Routes = [
 
 @NgModule({
   imports:
-     [ RouterModule.forRoot(routes, { scrollPositionRestoration: 'enabled', anchorScrolling: 'enabled' })],
+    [ RouterModule.forRoot(routes, { scrollPositionRestoration: 'enabled', anchorScrolling: 'enabled', initialNavigation: 'enabledBlocking' })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
