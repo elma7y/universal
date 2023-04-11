@@ -12,13 +12,16 @@ import { WebDeveComponent } from './web-deve/web-deve.component';
 
 const routes: Routes = [
   { path: '',  component:HeaderComponent, },
+  { path: 'home', component:HeaderComponent, children:[
+
+  ] },
   { path: 'noCode', component:NoCodeComponent },
   { path: 'web-development',component:WebDeveComponent },
   { path: 'uiUx',component:UiuxComponent },
   {path:'social',component:SocialComponent},
   {path:'about',component:AboutComponent,},
   {path:'join-us',component:JoinUsComponent},
-  {path:'cotact',component:ContactComponent},
+  {path:'contact',component:ContactComponent},
 
 
   { path: '**', component:PageNotFoundComponent},
@@ -29,7 +32,7 @@ const routes: Routes = [
 
 @NgModule({
   imports:
-    [ RouterModule.forRoot(routes, { scrollPositionRestoration: 'enabled', anchorScrolling: 'enabled', initialNavigation: 'enabledBlocking' })],
+    [ RouterModule.forRoot(routes, { scrollPositionRestoration: 'enabled'})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

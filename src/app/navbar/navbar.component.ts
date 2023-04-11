@@ -15,7 +15,7 @@ export class NavbarComponent implements OnInit,DoCheck,AfterViewInit  {
   ngDoCheck(): void {
   }
 
-  ngOnInit(): void {    
+  ngOnInit(): void {
   }
   scroll(el:any){
     el.scrollIntoView({behavior:'smooth'})
@@ -23,5 +23,12 @@ export class NavbarComponent implements OnInit,DoCheck,AfterViewInit  {
   closeToggle(){
     let toggle = document.getElementById("close")
     toggle?.click()
+  }
+  scrollintView(){
+    const el = document.getElementById("serve")
+    console.log(el);
+    if(el){
+      el.scrollIntoView({behavior:'smooth'})
+    }
   }
 }
