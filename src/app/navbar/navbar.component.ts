@@ -26,7 +26,6 @@ export class NavbarComponent implements OnInit,DoCheck,AfterViewInit  {
   }
   scrollintView(){
     const el = document.getElementById("serve")
-    console.log(el);
     if(el){
       el.scrollIntoView({behavior:'smooth'})
     }

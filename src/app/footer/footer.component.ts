@@ -11,5 +11,10 @@ export class FooterComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  scrollintView(){
+    const el = document.getElementById("serve")
+    if(el){
+      el.scrollIntoView({behavior:'smooth'})
+    }
+  }
 }
