@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-footer',
@@ -7,14 +8,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+  constructor(private route:Router) { }
 
   ngOnInit(): void {
   }
   scrollintView(){
+    this.service()
     const el = document.getElementById("serve")
     if(el){
       el.scrollIntoView({behavior:'smooth'})
+    }
+  }
+  service(){
+    if(this.route.url == "/privacy"){
+      this.route.navigate(['/'])
+      setTimeout(() => {
+        const el = document.getElementById("serve")
+        if(el){
+          el.scrollIntoView({behavior:'smooth'})
+        }
+      }, 1000);
     }
   }
 }

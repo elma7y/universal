@@ -25,9 +25,21 @@ export class NavbarComponent implements OnInit,DoCheck,AfterViewInit  {
     toggle?.click()
   }
   scrollintView(){
+    this.service()
     const el = document.getElementById("serve")
     if(el){
       el.scrollIntoView({behavior:'smooth'})
+    }
+  }
+  service(){
+    if(this.route.url == "/privacy"){
+      this.route.navigate(['/'])
+      setTimeout(() => {
+        const el = document.getElementById("serve")
+        if(el){
+          el.scrollIntoView({behavior:'smooth'})
+        }
+      }, 100);
     }
   }
 }

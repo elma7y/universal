@@ -1,6 +1,7 @@
-import { Component, OnInit ,DoCheck, HostListener, Inject, PLATFORM_ID } from '@angular/core';
+import { Component, OnInit ,DoCheck, HostListener} from '@angular/core';
+import { Router } from '@angular/router';
 import { window } from 'rxjs';
-import { isPlatformBrowser ,isPlatformServer } from '@angular/common';
+
 
 
 @Component({
@@ -11,9 +12,12 @@ import { isPlatformBrowser ,isPlatformServer } from '@angular/common';
 })
 export class AppComponent implements OnInit  {
 
-  constructor(@Inject(PLATFORM_ID) private platformId: Object){}
+  constructor(private route:Router){}
 
   ngOnInit(): void {
+  }
+
+  ngDoCheck(): void {
   }
 
   scrollToTop() {
@@ -28,6 +32,7 @@ export class AppComponent implements OnInit  {
     const scrollPosition = (window as unknown as Window).pageYOffset || (document.documentElement as HTMLElement).scrollTop || (document.body as HTMLElement).scrollTop || 0;
     this.showElement = scrollPosition > 100;
   }
+
 
 }
 

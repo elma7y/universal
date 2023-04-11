@@ -8,9 +8,6 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "dev:ssr": "ng run geekyAir:serve-ssr",
-    "serve:ssr": "node dist/geekyAir/server/main.js",
-    "build:ssr": "ng build && ng run geekyAir:server",
     "prerender": "ng run geekyAir:prerender"
   },
   "private": true,
@@ -39,7 +36,6 @@
     "@angular/compiler-cli": "^15.2.3",
     "@nguniversal/builders": "^15.2.0",
     "@types/aos": "^3.0.4",
-    "@types/express": "^4.17.0",
     "@types/jasmine": "~4.0.0",
     "@types/node": "^14.15.0",
     "jasmine-core": "~4.3.0",
