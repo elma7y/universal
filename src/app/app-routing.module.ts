@@ -9,20 +9,18 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { SocialComponent } from './social/social.component';
 import { UiuxComponent } from './uiux/uiux.component';
 import { WebDeveComponent } from './web-deve/web-deve.component';
+import { PrivacyComponent } from './privacy/privacy.component';
 
 const routes: Routes = [
   { path: '',  component:HeaderComponent, },
-  { path: 'home', component:HeaderComponent, children:[
-
-  ] },
-  { path: 'noCode', component:NoCodeComponent },
-  { path: 'web-development',component:WebDeveComponent },
-  { path: 'uiUx',component:UiuxComponent },
+  {path: 'noCode', component:NoCodeComponent },
+  {path: 'web-development',component:WebDeveComponent },
+  {path: 'uiUx',component:UiuxComponent },
   {path:'social',component:SocialComponent},
   {path:'about',component:AboutComponent,},
   {path:'join-us',component:JoinUsComponent},
   {path:'contact',component:ContactComponent},
-
+  {path:'privacy',component:PrivacyComponent},
 
   { path: '**', component:PageNotFoundComponent},
 

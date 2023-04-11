@@ -67,7 +67,9 @@ a {
 .navbar .links .d-flex .navbar-nav .nav-item a:hover:before{
   width: 100%;
 }
-
+.pointer{
+  cursor: pointer;
+}
 
 .py-5 {
   background-color: red;
@@ -89,6 +91,6 @@ a {
         background-color: white;
 
     }
-  
+
 }
 

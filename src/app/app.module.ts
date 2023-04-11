@@ -19,6 +19,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { JoinUsComponent } from './join-us/join-us.component';
 import { ContactComponent } from './contact/contact.component';
 import { ScrollTopModule } from 'primeng/scrolltop';
+import { PrivacyComponent } from './privacy/privacy.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { ScrollTopModule } from 'primeng/scrolltop';
     AboutComponent,
     JoinUsComponent,
     ContactComponent,
+    PrivacyComponent,
 
   ],
   imports: [

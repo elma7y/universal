@@ -67,3 +67,10 @@ a{
 li {
   cursor: pointer;
 }
+.pointer{
+  cursor: pointer;
+  transition: 0.3s;
+}
+.pointer:hover{
+  color: #FF0000 !important;
+}
