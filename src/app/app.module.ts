@@ -20,6 +20,7 @@ import { JoinUsComponent } from './join-us/join-us.component';
 import { ContactComponent } from './contact/contact.component';
 import { ScrollTopModule } from 'primeng/scrolltop';
 import { PrivacyComponent } from './privacy/privacy.component';
+// import { LocationStrategy, PathLocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -37,10 +38,9 @@ import { PrivacyComponent } from './privacy/privacy.component';
     JoinUsComponent,
     ContactComponent,
     PrivacyComponent,
-
   ],
   imports: [
-    BrowserModule.withServerTransition({ appId: 'serverApp' }),
+    BrowserModule,
     AppRoutingModule,
     AccordionModule,
     BrowserAnimationsModule,
@@ -48,7 +48,8 @@ import { PrivacyComponent } from './privacy/privacy.component';
     HttpClientModule,
     ScrollTopModule
     ],
-  providers: [],
-  bootstrap: [AppComponent]
+    providers: [
+    ],
+      bootstrap: [AppComponent]
 })
 export class AppModule { }

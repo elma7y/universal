@@ -21,11 +21,7 @@ const routes: Routes = [
   {path:'join-us',component:JoinUsComponent},
   {path:'contact',component:ContactComponent},
   {path:'privacy',component:PrivacyComponent},
-
   { path: '**', component:PageNotFoundComponent},
-
-
-
 ];
 
 @NgModule({
