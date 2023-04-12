@@ -20,7 +20,7 @@ import { JoinUsComponent } from './join-us/join-us.component';
 import { ContactComponent } from './contact/contact.component';
 import { ScrollTopModule } from 'primeng/scrolltop';
 import { PrivacyComponent } from './privacy/privacy.component';
-// import { LocationStrategy, PathLocationStrategy } from '@angular/common';
+import { LocationStrategy, PathLocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -49,6 +49,7 @@ import { PrivacyComponent } from './privacy/privacy.component';
     ScrollTopModule
     ],
     providers: [
+      { provide: LocationStrategy, useClass: PathLocationStrategy }
     ],
       bootstrap: [AppComponent]
 })

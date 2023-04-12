@@ -32,7 +32,7 @@ export class NavbarComponent implements OnInit,DoCheck,AfterViewInit  {
     }
   }
   service(){
-    if(this.route.url == "/privacy"){
+    if(this.route.url !== "/"){
       this.route.navigate(['/'])
       setTimeout(() => {
         const el = document.getElementById("serve")

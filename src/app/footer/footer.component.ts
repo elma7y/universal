@@ -20,7 +20,7 @@ export class FooterComponent implements OnInit {
     }
   }
   service(){
-    if(this.route.url == "/privacy"){
+    if(this.route.url !== "/"){
       this.route.navigate(['/'])
       setTimeout(() => {
         const el = document.getElementById("serve")
