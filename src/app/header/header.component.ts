@@ -1,4 +1,5 @@
 import { Component, OnInit  } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -9,12 +10,29 @@ import { Component, OnInit  } from '@angular/core';
 
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private route:Router) { }
 
   ngOnInit(): void {
 
   }
-
+  scrollintView(){
+    this.service()
+    const el = document.getElementById("serve")
+    if(el){
+      el.scrollIntoView({behavior:'smooth'})
+    }
+  }
+  service(){
+    if(this.route.url !== "/"){
+      this.route.navigate(['/'])
+      setTimeout(() => {
+        const el = document.getElementById("serve")
+        if(el){
+          el.scrollIntoView({behavior:'smooth'})
+        }
+      }, 100);
+    }
+  }
 
 
 }
