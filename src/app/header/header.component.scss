@@ -75,9 +75,7 @@ h1 {
     box-shadow: -2px -3px 0px 1px #021a93;
   }
 }
-.image-hader{
-  width: 170px ;
-}
+
 .title-blue {
   color: #2a2a72;
   letter-spacing: 1px;
@@ -183,9 +181,7 @@ small {
   right: 270px;
   top: 270px;
 }
-.GeekyAir {
-  width: 500px;
-}
+
 .header-home {
   background-image: url(../../assets/Images/bgg.jpg);
   background-position: center;
@@ -301,11 +297,8 @@ i {
 }
 
 .cycle-wrapper{
-	// width: 80%;
 	position: relative;
-	// margin: 110px auto 0 auto;
-	// font-family: 'Bree Serif';
-	// padding: 10px;
+	
 }
 .rw-sentence{
 	margin: 0;
@@ -435,25 +428,7 @@ h5 {
   margin-left: 40px;
   margin-right: 40px;
   }
-  .aos-animate {
-    -o-transition-property: none !important;
-    -moz-transition-property: none !important;
-    -ms-transition-property: none !important;
-    -webkit-transition-property: none !important;
-    transition-property: none !important;
-
-    -o-transform: none !important;
-    -moz-transform: none !important;
-    -ms-transform: none !important;
-    -webkit-transform: none !important;
-    transform: none !important;
-
-    -webkit-animation: none !important;
-    -moz-animation: none !important;
-    -o-animation: none !important;
-    -ms-animation: none !important;
-    animation: none !important;
-  }
+ 
   .bg-blog:hover .overlay{
     display: none !important;
   }
@@ -528,47 +503,11 @@ h5 {
   .bg-blog:hover .overlay{
     display: none !important;
   }
-  .aos-animate {
-    -o-transition-property: none !important;
-    -moz-transition-property: none !important;
-    -ms-transition-property: none !important;
-    -webkit-transition-property: none !important;
-    transition-property: none !important;
-
-    -o-transform: none !important;
-    -moz-transform: none !important;
-    -ms-transform: none !important;
-    -webkit-transform: none !important;
-    transform: none !important;
-
-    -webkit-animation: none !important;
-    -moz-animation: none !important;
-    -o-animation: none !important;
-    -ms-animation: none !important;
-    animation: none !important;
-  }
+  
 
 
 
-  .aos-init {
-    -o-transition-property: none !important;
-    -moz-transition-property: none !important;
-    -ms-transition-property: none !important;
-    -webkit-transition-property: none !important;
-    transition-property: none !important;
-
-    -o-transform: none !important;
-    -moz-transform: none !important;
-    -ms-transform: none !important;
-    -webkit-transform: none !important;
-    transform: none !important;
-
-    -webkit-animation: none !important;
-    -moz-animation: none !important;
-    -o-animation: none !important;
-    -ms-animation: none !important;
-    animation: none !important;
-  }
+ 
 
 
 
@@ -621,7 +560,6 @@ span .carousel-control-next-icon {
   width: 40px;
   outline: black;
   background-color: rgba(0, 0, 0, 0.3);
-  // background-size: 100%, 100%;
   border: 1px solid rgb(207, 142, 56);
   border-radius:20px;
   -webkit-border-radius:20px;

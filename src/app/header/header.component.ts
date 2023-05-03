@@ -33,6 +33,7 @@ export class HeaderComponent implements OnInit {
       }, 100);
     }
   }
+  img1="../../assets/Images/home.png"
 
 
 }

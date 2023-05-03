@@ -31,14 +31,12 @@
             ],
             "styles": [
                "node_modules/primeng/resources/primeng.min.css",
-               "node_modules/aos/dist/aos.css",
                "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
               "src/styles.scss"
             ],
             "scripts": [
-              "node_modules/bootstrap/dist/js/bootstrap.bundle.js",
-               "node_modules/aos/dist/aos.js"
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.js"
 
             ]
           },
@@ -113,5 +111,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "2afaf731-c4e5-4bd7-8c02-6f341e11d562"
   }
 }

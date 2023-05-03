@@ -12,7 +12,6 @@ import { SocialComponent } from './social/social.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import {AccordionModule} from 'primeng/accordion';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { BlogComponent } from './blog/blog.component';
 import { AboutComponent } from './about/about.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
@@ -20,6 +19,7 @@ import { JoinUsComponent } from './join-us/join-us.component';
 import { ContactComponent } from './contact/contact.component';
 import { ScrollTopModule } from 'primeng/scrolltop';
 import { PrivacyComponent } from './privacy/privacy.component';
+import { NgOptimizedImage } from '@angular/common'
 
 @NgModule({
   declarations: [
@@ -32,7 +32,6 @@ import { PrivacyComponent } from './privacy/privacy.component';
     UiuxComponent,
     SocialComponent,
     PageNotFoundComponent,
-    BlogComponent,
     AboutComponent,
     JoinUsComponent,
     ContactComponent,
@@ -45,7 +44,8 @@ import { PrivacyComponent } from './privacy/privacy.component';
     BrowserAnimationsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    ScrollTopModule
+    ScrollTopModule,
+    NgOptimizedImage
     ],
     providers: [
     ],
