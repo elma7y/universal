@@ -21,6 +21,53 @@ const routes: Routes = [
   {path:'join-us',component:JoinUsComponent},
   {path:'contact',component:ContactComponent},
   {path:'privacy',component:PrivacyComponent},
+  {path:'react',component:WebDeveComponent},
+  {path:'angular',component:WebDeveComponent},
+  {path:'vue',component:WebDeveComponent},
+  {path:'nodejs',component:WebDeveComponent},
+  {path:'django',component:WebDeveComponent},
+  {path:'laravel',component:WebDeveComponent},
+  {path:'php',component:WebDeveComponent},
+  {path:'webflow',component:WebDeveComponent},
+  {path:'wix',component:WebDeveComponent},
+  {path:'wordpress',component:WebDeveComponent},
+  {path:'dotnet',component:WebDeveComponent},
+  {path: 'zapier', component:NoCodeComponent },
+  {path: 'smartsuite', component:NoCodeComponent },
+  {path: 'airtable', component:NoCodeComponent },
+  {path: 'photoshop',component:UiuxComponent },
+  {path: 'adobe illustrator',component:UiuxComponent },
+  {path: 'figma',component:UiuxComponent },
+  {path: 'xd',component:UiuxComponent },
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
   { path: '**', component:PageNotFoundComponent},
 ];
 

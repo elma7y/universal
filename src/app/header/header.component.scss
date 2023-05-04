@@ -37,11 +37,15 @@ p {
   rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
-h1 {
+.h1 {
   font-size: 2.5rem;
 }
+.Welcome{
+  font-weight: 600;
+
+} 
 span,
-h1 {
+.h1 {
   color: #ff4f00;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
@@ -476,6 +480,12 @@ h5 {
   }
   .rw-sentence span{
     font-size: 16px;
+  }
+  .h1{
+    font-size: 50px;
+  }
+  .Testimonialss{
+    color: #ff4f00;
   }
   .Testimonials{
   align-items: center;
