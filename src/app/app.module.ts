@@ -19,8 +19,8 @@ import { JoinUsComponent } from './join-us/join-us.component';
 import { ContactComponent } from './contact/contact.component';
 import { ScrollTopModule } from 'primeng/scrolltop';
 import { PrivacyComponent } from './privacy/privacy.component';
-import { NgOptimizedImage } from '@angular/common'
-
+import { NgOptimizedImage } from '@angular/common';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,6 +36,8 @@ import { NgOptimizedImage } from '@angular/common'
     JoinUsComponent,
     ContactComponent,
     PrivacyComponent,
+    
+    
   ],
   imports: [
     BrowserModule,
@@ -45,7 +47,10 @@ import { NgOptimizedImage } from '@angular/common'
     ReactiveFormsModule,
     HttpClientModule,
     ScrollTopModule,
-    NgOptimizedImage
+    NgOptimizedImage,
+    CarouselModule
+    
+    
     ],
     providers: [
     ],
