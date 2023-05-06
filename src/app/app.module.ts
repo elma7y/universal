@@ -20,7 +20,6 @@ import { ContactComponent } from './contact/contact.component';
 import { ScrollTopModule } from 'primeng/scrolltop';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { NgOptimizedImage } from '@angular/common';
-import { CarouselModule } from 'ngx-owl-carousel-o';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,11 +35,11 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     JoinUsComponent,
     ContactComponent,
     PrivacyComponent,
-    
-    
+
+
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     AccordionModule,
     BrowserAnimationsModule,
@@ -48,9 +47,7 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     HttpClientModule,
     ScrollTopModule,
     NgOptimizedImage,
-    CarouselModule
-    
-    
+
     ],
     providers: [
     ],
