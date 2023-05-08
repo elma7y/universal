@@ -47,7 +47,6 @@ import { NgOptimizedImage } from '@angular/common';
     HttpClientModule,
     ScrollTopModule,
     NgOptimizedImage,
-
     ],
     providers: [
     ],

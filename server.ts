@@ -18,7 +18,9 @@ export function app(): express.Express {
   server.engine('html', ngExpressEngine({
     bootstrap: AppServerModule,
   }));
-
+  // server.get("/", (req, res) => {
+  //   res.status(200).json("welcome to hell")
+  // })
   server.set('view engine', 'html');
   server.set('views', distFolder);
 
